@@ -6,6 +6,7 @@
      * followed by a new line to standard error.
      *
      * Return: Always 1.
+     * Desription: "C program that prints exactly and that piece of art is useful"
      */
 int main(void)
 {
