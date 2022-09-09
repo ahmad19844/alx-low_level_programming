@@ -3,9 +3,9 @@
 /**
 * main - print the string in the put function
 *
-* Description: program that prints the size of various types on the computer it is compiled and run on
-* this program prints " prints the size of various types on the computer it is compiled and run it"
-* Return 0;
+* Description: using the main function
+* this program prints "prints the size of various types on the computer it is compiled and run on
+* Return: 0
 */
 int main (void)
 {
@@ -14,6 +14,7 @@ int main (void)
     long i;
     long long lli;
     float f;
+
     printf("Size of a char: %ld byte(s)\n", sizeof(c));
     printf("Size of an int: %ld byte(s)\n", sizeof(i));
     printf("Size of a long int: %ld byte(s)\n", sizeof(li);
