@@ -10,7 +10,7 @@
 /**
  *  main - Prints a random number and states whether
  *         it is positive, negative, or zero.
- * 
+ *  Description: using the main function
  *  Return: Always 0.
  */
 int main(void)
