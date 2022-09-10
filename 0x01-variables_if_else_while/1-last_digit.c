@@ -3,8 +3,10 @@
 #include <stdio.h>
 /**
  * main - Determine if the last digit of a random number is *
+ *
  * Decription: using the main function
- * program will assign a random number to the variable n each time it is executed.
+ * program will assign a random number to the
+ * variable n each time it is executed.
  * Return 0
  */
 int main(void)
@@ -12,6 +14,7 @@ int main(void)
 	int n;
 
 	char last[] = "Last digit of";
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
@@ -20,7 +23,7 @@ int main(void)
 	{
 		printf("greater than 5\n");
 	}
-	else if (n % 10 == 0)
+	else if(n % 10 == 0)
 	{
 		printf("0\n");	
 	}	
