@@ -5,7 +5,7 @@
  * main - Determine if the last digit of a random number is *
  *
  * Decription: using the main function
- * this program prints "will assign a random number to the variable n each time it is executed.
+ * this program prints "will assign a random number to the variable n each time.
  * Return 0
  */
 int main(void)
