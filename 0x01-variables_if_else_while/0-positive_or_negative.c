@@ -1,8 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/**
- * main-Determineifarandomnumberispositive,negativeorzero.   
+/** 
  * Return: 0 on success
  */
 int main(void)
