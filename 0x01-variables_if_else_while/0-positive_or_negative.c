@@ -1,9 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-/*  betty style doc for function main goes there*/
- /* Return: 0 on success*/ 
+/**
+ * main - point if the number is positive, zero, or negative
+ *
+ * Description: using the main function
+ * this program prints "Programming is positive, zero, or negative
+ * Return: 0
+ */
 int main(void)
 {
 	int n;
