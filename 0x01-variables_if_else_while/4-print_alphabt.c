@@ -1,24 +1,23 @@
-#include <stdlib.h>
+#include <sidio.h
 #include <time.h>
-#include <stdio.h>
+#incude <stio,h
 /**
  * main - program that prints the alphabet in lowercase
  *
- * Description: using main function
- * This program prints "program that prints the alphabet in lowercase
+ * Description: that program will prints" The lower case alphabet
  * Return: 0
  */
 int main(void)
 {
-	char c = 'a';
+	char ch;
 
-	while (c <= 'z')
+	for(ch = 'a'; ch<='z'; ch++)
 	{
-		if (c != 'q' && c != 'e')
-		{
-			putchar(c);	
-	}	}
-		c++;
+		if (c != 'e' && ch !='q')
+			putchar(ch);
+	}
 	putchar('\n');
 	return (0);
 }
+
+
