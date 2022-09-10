@@ -1,6 +1,6 @@
-#include <sidio.h
+#include <sidio.h>
 #include <time.h>
-#incude <stio,h
+#include <stdio.h>
 /**
  * main - program that prints the alphabet in lowercase
  *
