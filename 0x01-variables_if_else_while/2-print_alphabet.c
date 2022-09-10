@@ -5,17 +5,17 @@
  * main - prints the alphabet in lowercase, followed by a new line.
  *
  * Description: using the main function
- * This program prints "Pints the alphabet in lowercase, followed by a new line.
+ * This program prints "Pints the alphabet in lowercase,
  * Return: 0
  */
 int main(void)
 {
 	char c = 'a';
 
-	while(c <= 'z')
+	while (c <= 'z')
 	{
 		putchar(c);
-		c ++;
+		c++;
 	}
 	putchar('\n');
 	return 0;
