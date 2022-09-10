@@ -2,8 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - point if the number is positive, zero, or negative
- *
+ * main - Determine if the last digit of a random number is *
  * Decription: using the main function
  * program will assign a random number to the variable n each time it is executed.
  * Return 0
@@ -11,23 +10,24 @@
 int main(void)
 {
 	int n;
-	int i;
 
+	char last[] = "Last digit of";
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	i = n % 10;
 
-	if (i > 5)
+	printf("%s %d is %d and is ", last, n, n % 10);
+	if (n % 10 > 5)
 	{
-		printf("Last digit of %d is %d is greater than 5n\n", n, i);
+		printf("greater than 5\n");
 	}
-	else if (i == 0)
+	else if (n % 10 == 0)
 	{
-		printf("Last digit of %d is %d 0\n", n, i);
-	}
+		printf("0\n");	
+	}	
 	else
 	{
-		printf("Last digit of %d is %d and isless than 6 and not 0\n", n, i);
+		printf("less than 6 and not 0\n");
 	}
-	return 0;
+	
+	return (0);
 }
