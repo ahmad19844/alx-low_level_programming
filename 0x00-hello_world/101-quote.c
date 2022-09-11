@@ -1,10 +1,12 @@
- #include <unistd.h>
-
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 /**
- * main - Prints "and that piece of art is useful" - Dora Korpar, 2015-10-19",
- *                followed by a new line, to standard error.
+ * main - C program that prints exactly 
  *
- * Return: Always 1 (Success)
+ * Decription: using main function
+ * This program prints "and that piece of art is useful
+ * Return: 0
  */
 int main(void)
 {
