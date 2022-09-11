@@ -4,7 +4,7 @@
 /**
  * main - program that prints all possible_combinations_of_single-digit_numbers
  *
- * Description: using main function 
+ * Description: using main function
  * This program will prints "all possible combinations of_single-dig_tnumbers
  * Return: 0
  */
