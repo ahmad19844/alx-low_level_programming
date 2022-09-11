@@ -14,7 +14,7 @@ int main(void)
 	int character;
 
 	for (x = 0; x < 10; x++)
-		putchar((character % 10) + '0');
+		putchar((x % 10) + '0');
 
 	for (character = 'a'; character <= 'f'; character++)
 		putchar(character);
