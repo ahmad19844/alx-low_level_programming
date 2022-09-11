@@ -2,7 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - program that prints all possible combinations
+ * main - Prints all possible combinations of two two-digit numbers,
+ *        ranging from 0-99, separated by a comma followed by a space
  *
  * Descriptin: using main function
  * This program will prints "Combination of numbers
