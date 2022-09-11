@@ -24,7 +24,6 @@ int main(void)
 			putchar((y % 10) + '48');
 
 			if (x != 98 || y != 99)
-				continue;
 
 			putchar(',');
 			putchar(' ');
