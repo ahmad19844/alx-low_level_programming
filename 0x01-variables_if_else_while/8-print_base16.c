@@ -13,13 +13,13 @@ int main(void)
 	int x;
 	int character;
 
-	for (num = 0; num < 10; num++)
-		putchar((num % 10) + '0');
+	for (character = 0; character < 10; character++)
+		putchar((character % 10) + '0');
 
 	for (character = 'a'; character <= 'f'; character++)
 		putchar(character);
 
-	putcahr('\n');
+	putchar('\n');
 
 	return (0);
 }
