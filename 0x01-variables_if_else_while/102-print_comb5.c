@@ -11,7 +11,7 @@
  */
 int main(void)
 {
-	int x= 0, y;
+	int x = 0, y;
 
 	for (x = 0; x <= 98; x++)
 	{
