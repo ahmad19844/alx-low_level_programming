@@ -1,18 +1,21 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
+/*
+ * File: 101-quote.c
+ * Auth: Brennan D Baraban
+ */
+
+#include <unistd.h>
+
 /**
- * main - C program that prints exactly 
+ * main - Prints "and that piece of art is useful" - Dora Korpar, 2015-10-19, 
+ *                followed by a new line, to the standard error.
  *
- * Decription: using main function
- * This program prints "and that piece of art is useful
- * Return: 0
+ * Return: Always 1
  */
 int main(void)
 {
-	write(2,"and that piece of art is useful\" - Dora Korpar, 
-2015-10-19\n", 59);
+	write(2,
+			"and that piece of art is useful\" - Dora Korpar, 2015-0-19\n",
+			59);
 
 	return (1);
 }
-     
