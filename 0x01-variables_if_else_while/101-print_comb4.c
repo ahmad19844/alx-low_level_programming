@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - program that prints all_possible_different_combinations_of_three_digit
+ * main - program that prints all_possible_different
  *
  * Description: using main function
  * This program will prints " All possible different_combinations_of_thre_digis
@@ -31,8 +31,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
-	
 	return (0);
 }
-	
-
