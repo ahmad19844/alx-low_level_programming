@@ -11,30 +11,23 @@
  */
 int main(void)
 {
-	int x = 0, y;
+	int x, y;
 
-	while (x <= 99)
+	for (x = 0; x <= 98; x++)
 	{
-		y = x;
-		while (y <= 99)
+		for (y = y + 1; y <= 99; y++)
 		{
-			if (y != x)
-			{
-				putchar((x / 10) + '48');
-				putchar((x % 10) + '48');
-				putchar(' ');
-				putchar((y / 10) + '48');
-				putchar((y % 10) + '48');
-				
-				if (x != 98 || y != 99)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-			++y;
+			putchar((x / 10) + '48');
+			putchar((x % 10) + '48');
+			putchar(' ');
+			putchar((y / 10) + '48');
+			putchar((y % 10) + '48');
+
+			if (x != 98 || y != 99)
+
+			putchar(',');
+			putchar(' ');
 		}
-		++x;
 	}
 	putchar('\n');
 	return (0);
