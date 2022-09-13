@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #ifndef HOLBERTON_H_INCLUDED
 #define HOLBERTON_H_INCLUDED
 
@@ -18,3 +19,6 @@ void num(int r, int n);
 
 #endif
 
+=======
+int _putchar(char c);
+>>>>>>> b3d7769f57f47669ea7acfab7ad75a4161289e97
