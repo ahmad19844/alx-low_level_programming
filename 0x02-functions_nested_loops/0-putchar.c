@@ -1,10 +1,7 @@
-#iblude "main.h"
+#include "main.h"
 /**
  * main - print putchar
- *
- * Description: using main function
- * This program will prints "_putchar
- * Return : 0
+ * Rerurn: always 0
  */
 int main(void)
 {
@@ -16,7 +13,9 @@ int main(void)
 	_putchar('h');
 	_putchar('a');
 	_putchar('r');
-	putchar("\n");
+	
+	_putchar('\n');
+
 	return (0);
 }
 
