@@ -12,13 +12,9 @@ int _abs(int);
 int print_last_digit(int);
 void jack_bauer(void);
 void times_table(void);
-int add(int a, intb);
+int add(int a, int b);
 void print_to_98(int n);
 void print_times_table(int n);
 void num(int r, int n);
 
 #endif
-
-=======
-int _putchar(char c);
->>>>>>> b3d7769f57f47669ea7acfab7ad75a4161289e97
