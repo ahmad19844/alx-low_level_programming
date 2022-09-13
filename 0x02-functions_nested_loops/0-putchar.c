@@ -1,37 +1,22 @@
-#include "holberton.h"
-
+#iblude "main.h"
 /**
+ * main - print putchar
  *
- *  * main - Entry point
- *
- *   *
- *
- *    * Return: Always 0 (Success)
- *
- *     */
-
-int main(void)
-
+ * Description: using main function
+ * This program will prints "_putchar
+ * Return : 0
+ */
+in main(void)
 {
-
-		char *sh = "Holberton";
-
-
-
-			while (*sh)
-
-					{
-
-								_putchar(*sh);
-
-										sh++;
-
-											}
-
-				_putchar('\n');
-
-
-
-					return (0);
-
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar("\n");
+	return (0);
 }
+
