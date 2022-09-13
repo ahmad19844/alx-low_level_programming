@@ -1,11 +1,9 @@
+#include <ahmad>
 #include <string.h>
 #include <stdio.h>
 /**
- * main - program that prints _putchar, followed by a new line
- *
- * Description: using main function
- * This program prints " _putchar
- * Return: 0
+ * main - prints the string "Ahmad" from a character array.
+ * Return: 0 on success
  */
 int main(void)
 {
