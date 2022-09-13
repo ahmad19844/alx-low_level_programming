@@ -1,11 +1,11 @@
 #include "holberton.h"
 /**
- * main - prints the string "Ahmad" from a character array.
+ * main - prints the string "Holberton" from a character array.
  * Return: 0 on success
  */
 int main(void)
 {
-	char c[] = "Ahmad";
+	char c[] = "Holberton";
 	in a;
 
 	for (a = 0; a < 9; a++)
