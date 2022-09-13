@@ -1,6 +1,4 @@
 #include "holberton.h"
-#include <string.h>
-#include <stdio.h>
 /**
  * main - prints the string "Ahmad" from a character array.
  * Return: 0 on success
