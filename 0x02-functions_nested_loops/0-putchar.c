@@ -5,7 +5,7 @@
  *
  * Description: using main function
  * This program will prints "-putchar
- * Rerurn: always 0
+ * Return: 0
  */
 int main(void)
 {
