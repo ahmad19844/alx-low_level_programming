@@ -4,7 +4,7 @@
  *
  * Description: using main function
  * This program checks " lower case
- * Return: 0
+ * Return: Nothing.
  */
 int _islower(int c)
 {
