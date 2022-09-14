@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * main - print alphabet a-z
+ * print_alphabet - prints the english alphabet from a-z
  *
  * Description: using main function
  * This program prints "Alphabet a-z
- * Return: 0
+ * Return: Nothing.
  */
 int main(void)
 {
@@ -15,6 +15,4 @@ int main(void)
 		_putchar(c);
 	}
 	_putchar('\n');
-
-	return (0);
 }
