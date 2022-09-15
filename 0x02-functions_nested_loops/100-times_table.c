@@ -5,9 +5,9 @@
  * @n: The multiplication table requested.
  * Return: Nothing.
  */
-void print_times_table(int n)
+int print_times_table(void)
 {
-	int i, j, res;
+	int i, j, n, res;
 	
 	if (!(n > 15 || n < 0))
 	{
