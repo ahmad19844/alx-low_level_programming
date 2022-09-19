@@ -1,14 +1,21 @@
 #include "main.h"
 
 /**
- * main - check the code
- * @s: strint to be reversed
- * Return: Always 0.
+ * print_rev - prints a string and new line
+ * @s: String to be reversed
  */
 void print_rev(char *s)
 {
-	    char *str;
-		    str = "In few months to come, i will beome software engi";
-		    print_rev(str);
-		        return (0);
+	int i;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	i--;
+	while (s[i] != '\0')
+	{
+		_putchar(s[i--]);
+	}
+	_putchar('\n');
 }
