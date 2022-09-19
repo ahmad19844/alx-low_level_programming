@@ -2,6 +2,7 @@
 
 /**
  * main - check the code
+ * @s: strint to be reversed
  * Return: Always 0.
  */
 void print_rev(char *s)
