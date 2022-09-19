@@ -3,6 +3,8 @@
 /**
  * puts2 - Prints out other char of the string
  * @str: input string to pri
+ *
+ * Return: Nothing
  */
 void puts2(char *str)
 {
