@@ -4,10 +4,10 @@
  * main - check the code
  * Return: Always 0.
  */
-int main(void)
+void print_rev(char *s);
 {
 	    char *str;
-		    str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+		    str = "In few months to come, i will beome software engi";
 		    print_rev(str);
 		        return (0);
 }
