@@ -4,6 +4,8 @@
  * Swap_int - Switches Value of First input with the value of the second input.
  * @a: First number to swap.
  * @b: Second number to swap.
+ * Descriptin: Using user_defined_function
+ * Return: 0
  */
 void swap_int(int *a, int *b)
 {
