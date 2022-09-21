@@ -5,7 +5,6 @@
  * @dest: string to copy to 
  * @src: string being copie
  * @n: largest number of bytes to copy
- *
  * Return: address of destt
  */
 char *_strncpy(char *dest, char *src, int n)
