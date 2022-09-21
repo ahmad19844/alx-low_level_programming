@@ -2,8 +2,10 @@
 
 /**
  * _strncpy - cpoies n bytes of src to the dest string
- * @dest: string to copy to
- * @src: string being copied* @n: largest number of bytes to copy
+ * @dest: string to copy to 
+ * @src: string being copie
+ * @n: largest number of bytes to copy
+ *
  * Return: address of destt
  */
 char *_strncpy(char *dest, char *src, int n)
