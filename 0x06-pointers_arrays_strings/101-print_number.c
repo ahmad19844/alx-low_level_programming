@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -12,7 +13,7 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		putchar ('_');
+		_putchar ('_');
 		num = -num;
 	}
 	if ((num / 10) > '0')
