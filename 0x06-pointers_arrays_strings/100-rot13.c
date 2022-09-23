@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * rot13 - function that encodes a string using rot13.
+ * *rot13 - function that encodes a string using rot13.
  * @s: pointer pointed to the variable s , of type character
  * Return: Pointer P , pointed to the variable s of type char.
  * Update V2.0 : using Pointers instead of arrays to minimize the use
@@ -14,7 +14,6 @@ char *rot13(char *s)
 
 	char *original = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char *code = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-	
 	while (*s != '\0')
 	{
 		i = 0;
