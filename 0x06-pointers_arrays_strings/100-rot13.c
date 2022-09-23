@@ -1,43 +1,33 @@
-#include "main.h"                                                                                                                     
-/**         
- * rot13 - Encodes a string using rot13                               
- * @str: string to be encoded
- *
- * Return: A pointer to the encoded string.       
- */                                                       
-char *rot13(char *)
-{
-	int indx1 = 0, indx2;
-	char alphabet[52] = {'A', 'B', 'C', 'D', 'E', 'F',
-                             'G', 'H', 'I', 'J', 'K', 'L',
-                             'M', 'N', 'O', 'P', 'Q', 'R',
-                             'S', 'T', 'U', 'V', 'W', 'X',
-                             'Y', 'Z', 'a', 'b', 'c', 'd',
-                             'e', 'f', 'g', 'h', 'i', 'j',
-                             'k', 'l', 'm', 'n', 'o', 'p',
-                             'q', 'r', 's', 't', 'u', 'v',
-                             'w', 'x', 'y', 'z'};
-        char rot13key[52] = {'N', 'O', 'P', 'Q','R', 'S',
-                             'T', 'U', 'V', 'W', 'X','Y',
-                             'Z', 'a', 'b', 'c', 'd', 'e',
-                             'f', 'g', 'h', 'i', 'j', 'k',
-                             'l', 'm', 'n', 'o', 'p', 'q',
-                             'r', 's', 't', 'u', 'v', 'w',
-                              'x','y', 'z', 'a', 'b', 'c',
-			      'd', 'e', 'f', 'g', 'h', 'i',
-			      'j', 'k', 'l', 'm'};
+#include "main.h"
 
-	while (str[indx1])
+/**
+ * rot13 - function that encodes a string using rot13.
+ * @s: pointer pointed to the variable s , of type character
+ * Return: Pointer P , pointed to the variable s of type char.
+ * Update V2.0 : using Pointers instead of arrays to minimize the use
+ * of allocated memory and to improve the esthetic and simplicity of the cod
+ */
+char *rot13(char *s)
+{
+	int i;
+	char *p = s;
+	char *original = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char *code = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	
+	while (*s != '\0')
 	{
-		for (indx2 = 0; indx2 < 52; indx2++)
-		{ 
-			if (str[indx1] == alphabet[indx2])
+		i = 0;
+		while (i < 53)
+		{
+			if (*s == original[i])
 			{
-					str[indx1] = rot13key[indx2];
-			break;
+				*s = code[i];
+				break;
 			}
+			i++;
 		}
-	indx1++;
+		s++;
 	}
-	return (str);
+return (p);
 }
+
