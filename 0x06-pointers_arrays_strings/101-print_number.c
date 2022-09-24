@@ -3,6 +3,8 @@
 /**
  * print_number - printing integer
  * @n: integer to be print
+ *
+ * Return: 0
  */
 void print_number(int n)
 {
