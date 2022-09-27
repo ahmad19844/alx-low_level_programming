@@ -1,11 +1,10 @@
-#include <unistd.h>
 #include "main.h"
 /**
  * print_chessboard - prints the chessboard
  *
  * @a: the row of the array
  *
- * Return: nothing
+ * Return: nothin
  */
 
 void print_chessboard(char (*a)[8])
