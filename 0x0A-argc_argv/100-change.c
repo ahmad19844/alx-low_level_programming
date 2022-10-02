@@ -1,70 +1,29 @@
-#include "main"
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
- * coinConverter - Helper function that does all the mathematics
- * @i: Passed in variable from main for calculations
- * Return: The number of coins needed minimum for the passed in variable
+ * wildcmp - Compare strings
+ * @s1: pointer to string params
+ * @s2: pointer to string params
+ * Return: 0
  */
-int coinConverter(int i)
-{
-	int count = 0;
 
-	while (i != 0)
+int wildcmp(char *s1, char *s2)
+{
+	if (*s1 == '\0')
 	{
-		if (i % 10 == 9 || i % 10 == 7)
-			i -= 2;
-		else if (i % 25 == 0)
-			i -= 25;
-		else if (i % 10 == 0)
-			i -= 10;
-		else if (i % 5 == 0)
-			i -= 5;
-		else if (i % 2 == 0)
+		if (*s2 != '\0' && *s2 == '*')
 		{
-			if (i % 10 == 6)
-				i -= 1;
-			else
-				i -= 2;
+			return (wildcmp(s1, s2 + 1));
 		}
-		else
-			i -= 1;
-
-		count++;
+		return (*s2 == '\0');
 	}
-	return (count);
-}
-
-/**
- * main - Takes in exactly one argument for minimum coin count
- * @argc: Number of command line arguments
- * @argv: Array name
- * Return: 0 if exactly 1 argument is passed into this program, 1 otherwise
- */
-int main(int argc, char *argv[])
-{
-	int i, coin;
-
-	coin = 0;
-
-	if (argc != 2)
+	if (*s2 == '*')
 	{
-		printf("Error\n");
-		return (1);
+		return (wildcmp(s1 + 1, s2) || wildcmp(s1, s2 + 1));
 	}
-
-	i = atoi(argv[1]);
-
-	if (i < 0)
-		printf("0\n");
-	else
+	else if (*s1 == *s2)
 	{
-		coin = coinConverter(i);
-
-		printf("%d\n", coin);
+		return (wildcmp(s1 + 1, s2 + 1));
 	}
-
 	return (0);
-
 }
