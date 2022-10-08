@@ -6,15 +6,15 @@
  * @num2: second number
  * @mul: the result
  *
- * Return: nothing
+ * Return: 0
  */
-int main()
+int mainv(void)
 {
 	int num1, num2, mul;
 
 	printf("Enter two numbers:");
-	scanf("%d %d",&num1,&num2);
+	scanf("%d %d", &num1, &num2);
 	mul = num1 * num2;
-	printf("Product of two numbers: %d",mul);
+	printf("Product of two numbers: %d", mul);
 	return  (0);
 }
