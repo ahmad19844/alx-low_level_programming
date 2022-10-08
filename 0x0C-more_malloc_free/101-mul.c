@@ -1,7 +1,17 @@
 #include<stdio.h>
+
+/**
+ * main - the main function
+ * @num1: first number
+ * @num2: second number
+ * @mul: the result
+ *
+ * Return: nothing
+ */
 int main()
 {
 	int num1, num2, mul;
+
 	printf("Enter two numbers:");
 	scanf("%d %d",&num1,&num2);
 	mul = num1 * num2;
