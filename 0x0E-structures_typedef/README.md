@@ -1,0 +1,1 @@
+Strucre type
