@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef _LINKED_LIST
+#define _LINKED_LIST
 
 /**
  * struct list_s - singly linked list
@@ -17,7 +17,6 @@ typedef struct list_s
 	struct list_s *next;
 } list_t;
 
-int _putchar(char c)
 int _strlen(const char *s);
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
