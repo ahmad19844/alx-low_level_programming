@@ -1,6 +1,10 @@
-#ifndef _BIT_MANIP_
-#define _BIT_MANIP_
+#ifndef MAIN_H
+#define MAIN_H
 
+#include <stdio.h>
+#include <stdlib.h>
+
+int _putchar(char c);
 int _strlen(const char *s);
 unsigned int binary_to_uint(const char *b);
 int _putchar(char c);
