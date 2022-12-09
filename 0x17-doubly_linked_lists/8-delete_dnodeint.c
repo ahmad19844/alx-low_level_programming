@@ -1,51 +1,51 @@
+#include "lists.h"
+
+/**
+ * delete_dnodeint_at_index - deletes the node at index of a
+ * dlistint_t linked list
+ *
+ * @head: head of the list
+ * @index: index of the new node
+ * Return: 1 if it succeeded, -1 if it failed
+ */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *current = NULL, *temp = NULL;
-	unsigned int iter_times = 0, length = 0;
-	unsigned int length = 0;
+	dlistint_t *h1;
+	dlistint_t *h2;
+	unsigned int i;
 
-	if (head && *head)
+	h1 = *head;
+
+	if (h1 != NULL)
+		while (h1->prev != NULL)
+			h1 = h1->prev;
+
+	i = 0;
+
+	while (h1 != NULL)
 	{
-		current = *head;
-		length = dlistint_len(current);
-
-		length = dlistint_len(*head);
-		if (index > length)
-			return (-1);
-
-		if (index == 0)
-			return (delete_first_dnode(head));
-
-		if (length == index)
-		current = get_dnodeint_at_index(*head, index);
-		if (current)
+		if (i == index)
 		{
-			current = get_dnodeint_at_index(*head, index - 1);
-			temp = current;
-			current->prev->next = current->next;
-			free(temp);
-			return (1);
-		}
-
-		while (current != NULL)
-		{
-			if (iter_times == index)
-			if (length - 1 == index)
-				current->prev->next = current->next;
+			if (i == 0)
+			{
+				*head = h1->next;
+				if (*head != NULL)
+					(*head)->prev = NULL;
+			}
 			else
 			{
-				temp = current;
-				current->prev->next = current->next;
-				current->next->prev = current->prev;
-				free(temp);
-				return (1);
-			}
-			current = current->next;
-			++iter_times;
+				h2->next = h1->next;
 
-			free(temp);
+				if (h1->next != NULL)
+					h1->next->prev = h2;
+			}
+
+			free(h1);
 			return (1);
 		}
+		h2 = h1;
+		h1 = h1->next;
+		i++;
 	}
 
 	return (-1);
